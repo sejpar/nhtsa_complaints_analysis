@@ -1,0 +1,139 @@
+.list { display: flex; flex-direction: column; gap: 6px; }
+
+.count {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--sea);
+  letter-spacing: .06em;
+  margin-bottom: 8px;
+}
+.count strong { color: var(--anchor); }
+
+.item {
+  border: 0.5px solid rgba(61,107,101,.15);
+  border-radius: 4px;
+  overflow: hidden;
+  background: white;
+  transition: border-color .15s;
+}
+.itemOpen { border-color: var(--sea); }
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background .15s;
+}
+.header:hover { background: var(--surface); }
+
+.ico { font-size: 14px; flex-shrink: 0; }
+
+.headerMain {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.caseNum {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--anchor);
+  white-space: nowrap;
+}
+
+.date {
+  font-size: 11px;
+  color: var(--sea);
+  white-space: nowrap;
+  font-family: var(--mono);
+  font-size: 10px;
+}
+
+.component {
+  font-size: 11px;
+  color: var(--deep);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chevron {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--anchor);
+  flex-shrink: 0;
+  transition: transform .2s;
+  display: inline-block;
+}
+.chevronOpen { transform: rotate(180deg); }
+
+/* Body */
+.body {
+  padding: 14px 16px;
+  background: var(--surface);
+  border-top: 0.5px solid rgba(107,158,150,.2);
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.metricVal {
+  font-family: var(--mono);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--deep);
+}
+
+.metricLabel {
+  font-size: 10px;
+  letter-spacing: .08em;
+  color: var(--anchor);
+}
+
+.divider {
+  border: none;
+  border-top: 0.5px solid rgba(107,158,150,.2);
+  margin: 12px 0;
+}
+
+.summaryLabel {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: .18em;
+  color: var(--sea);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.summary {
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--deep);
+}
+
+.empty {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--anchor);
+  padding: 16px 0;
+  text-align: center;
+}

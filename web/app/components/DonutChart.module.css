@@ -1,0 +1,66 @@
+.wrap {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.svgWrap { width: 180px; flex-shrink: 0; }
+.svg     { width: 100%; height: auto; }
+
+.legend {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--deep);
+}
+
+.dot {
+  width: 8px; height: 8px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.name {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 140px;
+  color: var(--deep);
+}
+
+.pct {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--anchor);
+  width: 28px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.count {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--sea);
+  width: 24px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.empty {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--anchor);
+  padding: 16px 0;
+  text-align: center;
+}

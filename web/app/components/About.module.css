@@ -1,0 +1,96 @@
+.about {
+  background: var(--abyss);
+  padding: 100px 8vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.heading {
+  font-family: var(--serif);
+  font-size: clamp(36px, 4vw, 56px);
+  color: var(--sand);
+  line-height: 1.1;
+}
+.heading em { font-style: italic; color: var(--shallow); }
+
+.body {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--foam);
+  margin-top: 24px;
+  max-width: 480px;
+}
+
+.skills { margin-top: 36px; }
+.skillRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 0.5px solid rgba(107,158,150,.12);
+  gap: 16px;
+}
+.skillName {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: .06em;
+  color: var(--mist);
+  white-space: nowrap;
+}
+.skillTrack {
+  flex: 1;
+  height: 2px;
+  background: var(--deep);
+  border-radius: 1px;
+  overflow: hidden;
+}
+.skillFill {
+  height: 100%;
+  background: var(--shallow);
+  border-radius: 1px;
+}
+
+.contact {}
+.contactIntro {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .2em;
+  color: var(--sea);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.contactLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--serif);
+  font-size: 28px;
+  color: var(--mist);
+  text-decoration: none;
+  padding: 16px 0;
+  border-bottom: 0.5px solid rgba(107,158,150,.15);
+  transition: color .2s, padding-left .2s;
+}
+.contactLink:hover { color: var(--shallow); padding-left: 8px; }
+.contactLink span {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--anchor);
+}
+
+.footer {
+  background: var(--abyss);
+  border-top: 0.5px solid rgba(107,158,150,.1);
+  padding: 24px 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: .1em;
+  color: var(--anchor);
+}

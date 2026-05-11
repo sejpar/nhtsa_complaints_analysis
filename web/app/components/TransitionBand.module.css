@@ -1,0 +1,23 @@
+.band {
+  height: 100px;
+  background: linear-gradient(to bottom, var(--abyss), var(--surface));
+  position: relative;
+  overflow: hidden;
+}
+
+.band::before {
+  content: 'VEHICLE SAFETY · NHTSA COMPLAINTS · 2022–2025 · EXPLORATORY ANALYSIS';
+  position: absolute;
+  top: 50%;
+  white-space: nowrap;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .25em;
+  color: var(--anchor);
+  animation: marquee 18s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translate(100vw, -50%); }
+  to   { transform: translate(-200%, -50%); }
+}
